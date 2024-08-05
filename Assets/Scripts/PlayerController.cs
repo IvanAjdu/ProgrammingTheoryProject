@@ -2,17 +2,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float movementSpeed = 250f;
-
-
     void Update()
     {
         InputControl();
+        Debug.Log("MovementSpeed : " + Unit.movementSpeed);
     }
 
     private void InputControl()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        transform.Rotate(new Vector3(0, horizontalInput, 0) * movementSpeed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, -horizontalInput) * Unit.movementSpeed * Time.deltaTime);
     }
 }
