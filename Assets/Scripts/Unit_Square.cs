@@ -1,16 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Unit_Square : Unit
+public class Unit_Square : Unit //INHERITANCE
 {
     private void Awake()
     {
         checkShape();
+    }
+
+    private void Update()
+    {
         MovementSpeed();
     }
 
-    public override void MovementSpeed()
+    public override void MovementSpeed() //POLYMORPHISM
     {
         movementSpeed = 50;
     }

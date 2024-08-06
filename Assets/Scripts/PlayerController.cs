@@ -5,9 +5,8 @@ public class PlayerController : MonoBehaviour
 {
     void Update()
     {
-        InputControl();
+        InputControl(); // ABSTRACTION
         Debug.Log("MovementSpeed : " + Unit.movementSpeed);
-
     }
 
     private void InputControl()

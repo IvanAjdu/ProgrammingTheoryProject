@@ -3,22 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-    public static string shapeToSave { get; set; }
+    public static string shapeToSave { get; set; } // ENCAPSULATION
 
     public void SetSphere()
     {
         shapeToSave = "Sphere";
-        StartMain();
+        StartMain(); // ABSTRACTION
     }
     public void SetSquare()
     {
         shapeToSave = "Cube";
-        StartMain();
+        StartMain(); // ABSTRACTION
     }
     public void SetCapsule()
     {
         shapeToSave = "Capsule";
-        StartMain();
+        StartMain(); // ABSTRACTION
     }
 
     private void StartMain()

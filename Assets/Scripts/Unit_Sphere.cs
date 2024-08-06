@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Unit_Sphere : Unit
+public class Unit_Sphere : Unit //INHERITANCE
 {
     private void Awake()
     {
@@ -14,10 +12,8 @@ public class Unit_Sphere : Unit
         MovementSpeed();
     }
 
-    public override void MovementSpeed()
+    public override void MovementSpeed() //POLYMORPHISM
     {
         movementSpeed = 400;
     }
-
-
 }
