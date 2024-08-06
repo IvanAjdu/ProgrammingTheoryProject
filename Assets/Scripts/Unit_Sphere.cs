@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class Unit_Sphere : Unit
 {
+    private void Awake()
+    {
+        checkShape();
+    }
+
     private void Update()
     {
         MovementSpeed();
     }
+
     public override void MovementSpeed()
     {
-        movementSpeed = 200;
+        movementSpeed = 400;
     }
 
 

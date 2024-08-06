@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Unit_Square : Unit
 {
-    private void Update()
+    private void Awake()
     {
+        checkShape();
         MovementSpeed();
     }
 
