@@ -10,4 +10,12 @@ public abstract class Unit : MonoBehaviour
     {
         movementSpeed = 0;
     }
+
+    public void checkShape()
+    {
+        if (UIController.shapeToSave != gameObject.name)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
